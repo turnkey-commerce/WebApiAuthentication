@@ -323,7 +323,8 @@ namespace Web_API_Authentication.Controllers
 
             var user = new ApplicationUser()
             {
-                UserName = model.UserName
+                UserName = model.UserName,
+                PhoneNumber = model.PhoneNumber
             };
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);

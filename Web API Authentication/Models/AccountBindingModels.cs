@@ -49,7 +49,7 @@ namespace Web_API_Authentication.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
-        public string TelephoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
     }
 
     public class RegisterExternalBindingModel

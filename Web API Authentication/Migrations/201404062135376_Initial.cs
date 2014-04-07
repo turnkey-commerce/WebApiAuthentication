@@ -24,7 +24,7 @@ namespace Web_API_Authentication.Migrations
                         UserName = c.String(),
                         PasswordHash = c.String(),
                         SecurityStamp = c.String(),
-                        phoneNumber = c.String(),
+                        PhoneNumber = c.String(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id);
